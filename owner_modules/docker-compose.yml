@@ -1,0 +1,7 @@
+services:
+  owner_modules-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/owner_modules # Upgrade the code the origin files between docker container

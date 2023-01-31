@@ -1,0 +1,9 @@
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/web-server # Upgrade the code the origin files between docker container
+    ports:
+     - '80:80'
